@@ -16,7 +16,7 @@ function AboutUs(){
             {data.paragraphs.map((paragraph, index) => (
                 <p key={index}>{paragraph}</p>
             ))}
-            {data.image && <img src={data.image} alt="me"/>}
+            {data.image && <img src={data.image} alt="me" width="60%"/>}
         </div>
 
     );
