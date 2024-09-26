@@ -63,13 +63,18 @@ app.get('/about-us', (req, res) => {
   res.json({
     paragraphs: [
       "Hi all, my name is Andy Liu. I am a Computer Science student \
-      at New York University. In addition to my love for technology and \
-      coding, I am pursuing a career in finance.",
+      at New York University. I was born in New York, but grew up \
+      in GuangZhou, China. Then after lower school, my family and I moved to Texas. \
+      I remember the move was a big cultural shock for me at first, \
+      especially since I was so accustomed to the ways things work in China. \
+      But with the help of my peers and teachers, I was able to get on track \
+      quickly. Overall, I really enjoyed living in Texas and would definitely \
+      consider moving back.",
 
       "Besides school and work, I enjoy outdoor activities including \
-      hiking, running, and reading.",
-
-      "Thank you for reading my about page!"
+      hiking, running, and reading. Some other hobbies that I fell in love with \
+      include streetwear clothing and skateboarding. I am a big fan of poker \
+      as well!"
     ],
     image: "/andy.png"
   })
