@@ -59,7 +59,7 @@ app.get('/messages/:messageId', async (req, res) => {
 })
 
 // route to handle about us page
-app.get('/about-us', (req, res) => {
+app.get('/about', (req, res) => {
   res.json({
     paragraphs: [
       "Hi all, my name is Andy Liu. I am a Computer Science student \

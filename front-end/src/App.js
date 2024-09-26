@@ -21,10 +21,8 @@ const App = props => {
             <Route path="/messages" element={<Messages />} />
 
             {/* a route for just a single message, where the id of the desired message is passed as a parameter */}
-            <Route
-              path="/messages/:messageId"
-              element={<MessageStandalone />}
-            />
+            <Route path="/messages/:messageId" element={<MessageStandalone />} />
+            
             <Route path="/about-us" element={<AboutUs />} />
           </Routes>
         </main>
