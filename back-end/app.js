@@ -57,6 +57,24 @@ app.get('/messages/:messageId', async (req, res) => {
     })
   }
 })
+
+// route to handle about us page
+app.get('/about-us', (req, res) => {
+  res.json({
+    paragraphs: [
+      "Hi all, my name is Andy Liu. I am a Computer Science student \
+      at New York University. In addition to my love for technology and \
+      coding, I am pursuing a career in finance.",
+
+      "Besides school and work, I enjoy outdoor activities including \
+      hiking, running, and reading.",
+
+      "Thank you for reading my about page!"
+    ],
+    image: "/andy.png"
+  })
+})
+
 // a route to handle logging out users
 app.post('/messages/save', async (req, res) => {
   // try to save the message to the database
